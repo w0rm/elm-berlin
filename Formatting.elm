@@ -217,6 +217,7 @@ split leftContent rightContent =
                 , ( "table-layout", "fixed" )
                 , ( "border-spacing", "0" )
                 , ( "border-collapse", "collapse" )
+                , ( "vertical-align", "top" )
                 ]
             ]
         )
