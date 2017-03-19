@@ -38,10 +38,11 @@ slides =
     , [ padded organizers ]
     , [ padded
             [ align Center
-                [ title "Wi-Fi Info"
-                , spacing 40
-                , title "Network:"
+                [ spacing 100
+                , title "Wi-Fi:"
                 , title "Password:"
+                , spacing 80
+                , image ( 186, 108 ) "assets/soundcloud.svg"
                 ]
             ]
       ]
