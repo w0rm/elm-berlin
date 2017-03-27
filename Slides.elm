@@ -65,7 +65,7 @@ slides =
                     , "19:30 — Welcome Message"
                     , "19:40 — Daniel Bachler: Using Elm for Science"
                     , "20:10 — Andrey Kuzmin: Introduction to WebGL in Elm"
-                    , "20:40 — Discussion"
+                    , "20:40 — Lightning Talks & Discussion"
                     ]
                 ]
             ]
