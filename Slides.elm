@@ -27,7 +27,7 @@ bulletslide list =
 
 slides : List (Slide Model Message)
 slides =
-    [ [ position ( 390, 470 )
+    [ [ position ( 490, 490 )
             [ richtext
                 "# [Hack Night](https://www.meetup.com/preview/Elm-Berlin/events/243644020)"
             ]
@@ -36,11 +36,8 @@ slides =
     , [ padded organizers ]
     , [ padded
             [ align Center
-                [ spacing 100
-                , title "Wi-Fi:"
-                , title "Password:"
-                , spacing 80
-                , image ( 186, 108 ) "assets/soundcloud.svg"
+                [ spacing 150
+                , image ( 186 * 2, 108 * 2 ) "assets/soundcloud.svg"
                 ]
             ]
       ]
@@ -56,17 +53,38 @@ slides =
       ]
     , [ padded
             [ title "Schedule"
-            , scale 1.1
-                [ bulletslide
-                    [ "19:00 — Open Door & Pizzas"
-                    , "19:30 — Introduction Round"
-                    , "20:00 — Hacking"
-                    , "21:30 — Recap & Demos"
-                    , "22:00 — The End"
-                    ]
+            , bulletslide
+                [ "19:00 — Open Door & Pizzas"
+                , "19:30 — Introduction Round & Demos"
+                , "20:00 — Hacking"
+                , "21:30 — Recap & More Demos"
+                , "22:00 — The End"
+                ]
+            ]
+      ]
+    , [ padded
+            [ align Center
+                [ title "Elm Game Jam"
+                , richtext "February: “Safety”"
+                , spacing 20
+                , image ( 2240 // 7, 1417 // 7 ) "assets/egc.png"
+                , spacing 30
+                , richtext "## [elmgames.club](http://elmgames.club/)"
+                ]
+            ]
+      ]
+    , [ padded
+            [ align Center
+                [ title "Elm Europe"
+                , richtext "Paris, 5-6 July"
+                , spacing 30
+                , image ( 1200 // 5, 979 // 5 ) "assets/elm-europe.png"
+                , spacing 30
+                , richtext "## [elmeurope.org](https://elmeurope.org/)"
                 ]
             ]
       ]
     ]
         |> List.map ((::) blueLine)
         |> List.map slide
+        |> List.map (SliceShow.Slide.setDimensions ( 1280, 720 ))

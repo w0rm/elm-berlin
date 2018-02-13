@@ -36,7 +36,7 @@ type Align
 
 slidePadding : String
 slidePadding =
-    "50px 100px"
+    "70px 150px 10px"
 
 
 {-| Custom slide that adds the padding

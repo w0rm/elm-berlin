@@ -59,11 +59,11 @@ view t =
             interpolate shapes t
 
         ratio =
-            1024 / 640
+            1280 / 720
     in
         WebGL.toHtml
-            [ width 1024
-            , height 640
+            [ width 1280
+            , height 720
             , style [ ( "display", "block" ) ]
             ]
             [ render ratio Mesh.parallelepiped colors.green (scaleMat 1) shape.parallelepiped t
