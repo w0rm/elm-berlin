@@ -14,8 +14,8 @@ organizers =
         [ image ( 250, 250 ) "assets/unsoundscapes.png"
         , richtext "Andrey Kuzmin  \n[@unsoundscapes](https://twitter.com/unsoundscapes)"
         ]
-        [ image ( 250, 250 ) "assets/danielbachler.jpg"
-        , richtext "Daniel Bachler  \n[@DanyX23](https://twitter.com/DanyX23)"
+        [ spacing 20
+        , image ( 372, 216 ) "assets/soundcloud.svg"
         ]
     ]
 
@@ -36,8 +36,11 @@ slides =
     , [ padded organizers ]
     , [ padded
             [ align Center
-                [ spacing 150
-                , image ( 186 * 2, 108 * 2 ) "assets/soundcloud.svg"
+                [ spacing 100
+                , title "Wi-Fi: SoundCloud Guests"
+                , title "Password:"
+                , spacing 80
+                , image ( 186, 108 ) "assets/soundcloud.svg"
                 ]
             ]
       ]
@@ -65,7 +68,7 @@ slides =
     , [ padded
             [ align Center
                 [ title "Elm Game Jam"
-                , richtext "February: “Safety”"
+                , richtext "March, April: “Randomness”"
                 , spacing 20
                 , image ( 2240 // 7, 1417 // 7 ) "assets/egc.png"
                 , spacing 30

@@ -14718,13 +14718,13 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$o
 				},
 				{
 					ctor: '::',
-					_0: A2(
-						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-						{ctor: '_Tuple2', _0: 250, _1: 250},
-						'assets/danielbachler.jpg'),
+					_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(20),
 					_1: {
 						ctor: '::',
-						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Daniel Bachler  \n[@DanyX23](https://twitter.com/DanyX23)'),
+						_0: A2(
+							_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+							{ctor: '_Tuple2', _0: 372, _1: 216},
+							'assets/soundcloud.svg'),
 						_1: {ctor: '[]'}
 					}
 				}),
@@ -14782,14 +14782,26 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 										_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$Center,
 										{
 											ctor: '::',
-											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(150),
+											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(100),
 											_1: {
 												ctor: '::',
-												_0: A2(
-													_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-													{ctor: '_Tuple2', _0: 186 * 2, _1: 108 * 2},
-													'assets/soundcloud.svg'),
-												_1: {ctor: '[]'}
+												_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Wi-Fi: SoundCloud Guests'),
+												_1: {
+													ctor: '::',
+													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Password:'),
+													_1: {
+														ctor: '::',
+														_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(80),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+																{ctor: '_Tuple2', _0: 186, _1: 108},
+																'assets/soundcloud.svg'),
+															_1: {ctor: '[]'}
+														}
+													}
+												}
 											}
 										}),
 									_1: {ctor: '[]'}
@@ -14886,7 +14898,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 														_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Elm Game Jam'),
 														_1: {
 															ctor: '::',
-															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('February: “Safety”'),
+															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('March, April: “Randomness”'),
 															_1: {
 																ctor: '::',
 																_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(20),
