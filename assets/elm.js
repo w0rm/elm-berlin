@@ -14718,13 +14718,13 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$o
 				},
 				{
 					ctor: '::',
-					_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(20),
+					_0: A2(
+						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+						{ctor: '_Tuple2', _0: 250, _1: 250},
+						'assets/michaelglass.png'),
 					_1: {
 						ctor: '::',
-						_0: A2(
-							_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-							{ctor: '_Tuple2', _0: 372, _1: 216},
-							'assets/soundcloud.svg'),
+						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Michael Glass  \n[@michaelglass](https://twitter.com/michaelglass)'),
 						_1: {ctor: '[]'}
 					}
 				}),
@@ -14750,18 +14750,21 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 				_0: {
 					ctor: '::',
 					_0: A2(
-						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$position,
-						{ctor: '_Tuple2', _0: 490, _1: 490},
+						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$background,
+						'assets/the-elm-architecture.jpg',
 						{
 							ctor: '::',
-							_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Hack Night](https://www.meetup.com/preview/Elm-Berlin/events/243644020)'),
+							_0: A2(
+								_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$position,
+								{ctor: '_Tuple2', _0: 30, _1: 580},
+								{
+									ctor: '::',
+									_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Code Night](https://www.meetup.com/Elm-Berlin/)'),
+									_1: {ctor: '[]'}
+								}),
 							_1: {ctor: '[]'}
 						}),
-					_1: {
-						ctor: '::',
-						_0: _w0rm$elm_slice_show$SliceShow_Content$custom(_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Model$tangram),
-						_1: {ctor: '[]'}
-					}
+					_1: {ctor: '[]'}
 				},
 				_1: {
 					ctor: '::',
@@ -14788,7 +14791,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 												_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Wi-Fi: SoundCloud Guests'),
 												_1: {
 													ctor: '::',
-													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Password:'),
+													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Password: ZJTMB-VFZLM'),
 													_1: {
 														ctor: '::',
 														_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(80),
@@ -14865,7 +14868,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 															_0: '19:30 — Introduction Round & Demos',
 															_1: {
 																ctor: '::',
-																_0: '20:00 — Hacking',
+																_0: '20:00 — Coding',
 																_1: {
 																	ctor: '::',
 																	_0: '21:30 — Recap & More Demos',
@@ -14883,93 +14886,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 										}),
 									_1: {ctor: '[]'}
 								},
-								_1: {
-									ctor: '::',
-									_0: {
-										ctor: '::',
-										_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(
-											{
-												ctor: '::',
-												_0: A2(
-													_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$align,
-													_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$Center,
-													{
-														ctor: '::',
-														_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Elm Game Jam'),
-														_1: {
-															ctor: '::',
-															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('March, April: “Randomness”'),
-															_1: {
-																ctor: '::',
-																_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(20),
-																_1: {
-																	ctor: '::',
-																	_0: A2(
-																		_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-																		{ctor: '_Tuple2', _0: (2240 / 7) | 0, _1: (1417 / 7) | 0},
-																		'assets/egc.png'),
-																	_1: {
-																		ctor: '::',
-																		_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
-																		_1: {
-																			ctor: '::',
-																			_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('## [elmgames.club](http://elmgames.club/)'),
-																			_1: {ctor: '[]'}
-																		}
-																	}
-																}
-															}
-														}
-													}),
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									},
-									_1: {
-										ctor: '::',
-										_0: {
-											ctor: '::',
-											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(
-												{
-													ctor: '::',
-													_0: A2(
-														_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$align,
-														_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$Center,
-														{
-															ctor: '::',
-															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Elm Europe'),
-															_1: {
-																ctor: '::',
-																_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Paris, 5-6 July'),
-																_1: {
-																	ctor: '::',
-																	_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(
-																			_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-																			{ctor: '_Tuple2', _0: (1200 / 5) | 0, _1: (979 / 5) | 0},
-																			'assets/elm-europe.png'),
-																		_1: {
-																			ctor: '::',
-																			_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
-																			_1: {
-																				ctor: '::',
-																				_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('## [elmeurope.org](https://elmeurope.org/)'),
-																				_1: {ctor: '[]'}
-																			}
-																		}
-																	}
-																}
-															}
-														}),
-													_1: {ctor: '[]'}
-												}),
-											_1: {ctor: '[]'}
-										},
-										_1: {ctor: '[]'}
-									}
-								}
+								_1: {ctor: '[]'}
 							}
 						}
 					}
