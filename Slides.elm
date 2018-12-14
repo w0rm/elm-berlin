@@ -8,7 +8,7 @@ import SliceShow.Slide exposing (..)
 
 organizers : List (Content Model Message)
 organizers =
-    [ title "Organized by"
+    [ title "Who we are"
     , spacing 25
     , split
         [ image ( 250, 250 ) "assets/unsoundscapes.png"
@@ -36,21 +36,23 @@ slides =
     [ [ background "assets/the-elm-architecture.jpg"
             [ position ( 30, 580 )
                 [ richtext
-                    "# [Code Night](https://www.meetup.com/Elm-Berlin/)"
+                    "# [Elm Introductory Workshop](https://www.meetup.com/Elm-Berlin/)"
+                ]
+            ]
+      ]
+    , [ padded
+            [ align Center
+                [ title "Thanks to sponsors"
+                , spacing 40
+                , image ( 109 * 3, 24 * 3 ) "assets/noredink.svg"
+                , spacing 30
+                , image ( 98 * 4, 28 * 4 ) "assets/nextjournal.svg"
+                , spacing 30
+                , image ( 93 * 2, 54 * 2) "assets/soundcloud.svg"
                 ]
             ]
       ]
     , [ padded organizers ]
-    , [ padded
-            [ align Center
-                [ spacing 100
-                , title "Wi-Fi: "
-                , title "Password: "
-                , spacing 80
-                , image ( 186, 108 ) "assets/soundcloud.svg"
-                ]
-            ]
-      ]
     , [ padded
             [ align Center
                 [ title "Berlin Code of Conduct"
@@ -64,11 +66,13 @@ slides =
     , [ padded
             [ title "Schedule"
             , bulletslide
-                [ "19:00 — Open Door & Pizzas"
-                , "19:30 — Introduction Round & Demos"
-                , "20:00 — Coding"
-                , "21:30 — Recap & More Demos"
-                , "22:00 — The End"
+                [ "9-10am: Check-in, breakfast and software installation"
+                , "10am: Opening talk, student sorting"
+                , "10:30am: Code"
+                , "12:30pm: Lunch"
+                , "1:30pm: Code"
+                , "4:30pm: Closing talk, announcements & retrospectives"
+                , "5-7pm: Afterparty (optional)"
                 ]
             ]
       ]

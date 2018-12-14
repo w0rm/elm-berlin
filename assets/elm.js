@@ -14696,7 +14696,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$b
 };
 var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$organizers = {
 	ctor: '::',
-	_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Organized by'),
+	_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Who we are'),
 	_1: {
 		ctor: '::',
 		_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(25),
@@ -14759,7 +14759,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 								{ctor: '_Tuple2', _0: 30, _1: 580},
 								{
 									ctor: '::',
-									_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Code Night](https://www.meetup.com/Elm-Berlin/)'),
+									_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Elm Introductory Workshop](https://www.meetup.com/Elm-Berlin/)'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -14770,45 +14770,59 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 					ctor: '::',
 					_0: {
 						ctor: '::',
-						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$organizers),
+						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(
+							{
+								ctor: '::',
+								_0: A2(
+									_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$align,
+									_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$Center,
+									{
+										ctor: '::',
+										_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Thanks to sponsors'),
+										_1: {
+											ctor: '::',
+											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(40),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+													{ctor: '_Tuple2', _0: 109 * 3, _1: 24 * 3},
+													'assets/noredink.svg'),
+												_1: {
+													ctor: '::',
+													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+															{ctor: '_Tuple2', _0: 98 * 4, _1: 28 * 4},
+															'assets/nextjournal.svg'),
+														_1: {
+															ctor: '::',
+															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
+																	{ctor: '_Tuple2', _0: 93 * 2, _1: 54 * 2},
+																	'assets/soundcloud.svg'),
+																_1: {ctor: '[]'}
+															}
+														}
+													}
+												}
+											}
+										}
+									}),
+								_1: {ctor: '[]'}
+							}),
 						_1: {ctor: '[]'}
 					},
 					_1: {
 						ctor: '::',
 						_0: {
 							ctor: '::',
-							_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(
-								{
-									ctor: '::',
-									_0: A2(
-										_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$align,
-										_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$Center,
-										{
-											ctor: '::',
-											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(100),
-											_1: {
-												ctor: '::',
-												_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Wi-Fi: SoundCloud Guests'),
-												_1: {
-													ctor: '::',
-													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Password: ZJTMB-VFZLM'),
-													_1: {
-														ctor: '::',
-														_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(80),
-														_1: {
-															ctor: '::',
-															_0: A2(
-																_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-																{ctor: '_Tuple2', _0: 186, _1: 108},
-																'assets/soundcloud.svg'),
-															_1: {ctor: '[]'}
-														}
-													}
-												}
-											}
-										}),
-									_1: {ctor: '[]'}
-								}),
+							_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$padded(_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$organizers),
 							_1: {ctor: '[]'}
 						},
 						_1: {
@@ -14862,20 +14876,28 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 												_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$bulletslide(
 													{
 														ctor: '::',
-														_0: '19:00 — Open Door & Pizzas',
+														_0: '9-10am: Check-in, breakfast and software installation',
 														_1: {
 															ctor: '::',
-															_0: '19:30 — Introduction Round & Demos',
+															_0: '10am: Opening talk, student sorting',
 															_1: {
 																ctor: '::',
-																_0: '20:00 — Coding',
+																_0: '10:30am: Code',
 																_1: {
 																	ctor: '::',
-																	_0: '21:30 — Recap & More Demos',
+																	_0: '12:30pm: Lunch',
 																	_1: {
 																		ctor: '::',
-																		_0: '22:00 — The End',
-																		_1: {ctor: '[]'}
+																		_0: '1:30pm: Code',
+																		_1: {
+																			ctor: '::',
+																			_0: '4:30pm: Closing talk, announcements & retrospectives',
+																			_1: {
+																				ctor: '::',
+																				_0: '5-7pm: Afterparty (optional)',
+																				_1: {ctor: '[]'}
+																			}
+																		}
 																	}
 																}
 															}
