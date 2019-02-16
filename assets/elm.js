@@ -14709,10 +14709,10 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$o
 					_0: A2(
 						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
 						{ctor: '_Tuple2', _0: 250, _1: 250},
-						'assets/unsoundscapes.png'),
+						'assets/michaelglass.png'),
 					_1: {
 						ctor: '::',
-						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Andrey Kuzmin  \n[@unsoundscapes](https://twitter.com/unsoundscapes)'),
+						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Michael Glass  \n[@michaelglass](https://twitter.com/michaelglass)'),
 						_1: {ctor: '[]'}
 					}
 				},
@@ -14721,10 +14721,10 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$o
 					_0: A2(
 						_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
 						{ctor: '_Tuple2', _0: 250, _1: 250},
-						'assets/michaelglass.png'),
+						'assets/unsoundscapes.png'),
 					_1: {
 						ctor: '::',
-						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Michael Glass  \n[@michaelglass](https://twitter.com/michaelglass)'),
+						_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('Andrey Kuzmin  \n[@unsoundscapes](https://twitter.com/unsoundscapes)'),
 						_1: {ctor: '[]'}
 					}
 				}),
@@ -14759,7 +14759,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 								{ctor: '_Tuple2', _0: 30, _1: 580},
 								{
 									ctor: '::',
-									_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Elm Introductory Workshop](https://www.meetup.com/Elm-Berlin/)'),
+									_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$richtext('# [Elm Bridge](https://www.bridgetroll.org/events/459)'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -14781,7 +14781,7 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 										_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$title('Thanks to sponsors'),
 										_1: {
 											ctor: '::',
-											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(40),
+											_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(60),
 											_1: {
 												ctor: '::',
 												_0: A2(
@@ -14790,25 +14790,14 @@ var _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Slides$s
 													'assets/noredink.svg'),
 												_1: {
 													ctor: '::',
-													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
+													_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(80),
 													_1: {
 														ctor: '::',
 														_0: A2(
 															_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
 															{ctor: '_Tuple2', _0: 98 * 4, _1: 28 * 4},
 															'assets/nextjournal.svg'),
-														_1: {
-															ctor: '::',
-															_0: _w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$spacing(30),
-															_1: {
-																ctor: '::',
-																_0: A2(
-																	_w0rm$project_mosaic_an_architecture_for_the_frontend_microservices$Formatting$image,
-																	{ctor: '_Tuple2', _0: 93 * 2, _1: 54 * 2},
-																	'assets/soundcloud.svg'),
-																_1: {ctor: '[]'}
-															}
-														}
+														_1: {ctor: '[]'}
 													}
 												}
 											}

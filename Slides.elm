@@ -11,11 +11,11 @@ organizers =
     [ title "Who we are"
     , spacing 25
     , split
-        [ image ( 250, 250 ) "assets/unsoundscapes.png"
-        , richtext "Andrey Kuzmin  \n[@unsoundscapes](https://twitter.com/unsoundscapes)"
-        ]
         [ image ( 250, 250 ) "assets/michaelglass.png"
         , richtext "Michael Glass  \n[@michaelglass](https://twitter.com/michaelglass)"
+        ]
+        [ image ( 250, 250 ) "assets/unsoundscapes.png"
+        , richtext "Andrey Kuzmin  \n[@unsoundscapes](https://twitter.com/unsoundscapes)"
         ]
 
     {-
@@ -36,19 +36,17 @@ slides =
     [ [ background "assets/the-elm-architecture.jpg"
             [ position ( 30, 580 )
                 [ richtext
-                    "# [Elm Introductory Workshop](https://www.meetup.com/Elm-Berlin/)"
+                    "# [Elm Bridge](https://www.bridgetroll.org/events/459)"
                 ]
             ]
       ]
     , [ padded
             [ align Center
                 [ title "Thanks to sponsors"
-                , spacing 40
+                , spacing 60
                 , image ( 109 * 3, 24 * 3 ) "assets/noredink.svg"
-                , spacing 30
+                , spacing 80
                 , image ( 98 * 4, 28 * 4 ) "assets/nextjournal.svg"
-                , spacing 30
-                , image ( 93 * 2, 54 * 2) "assets/soundcloud.svg"
                 ]
             ]
       ]
