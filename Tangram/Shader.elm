@@ -1,7 +1,7 @@
-module Tangram.Shader exposing (Attribute, Varying, Uniform, vertex, fragment)
+module Tangram.Shader exposing (Attribute, Uniform, Varying, fragment, vertex)
 
-import Math.Vector3 exposing (Vec3)
 import Math.Matrix4 exposing (Mat4)
+import Math.Vector3 exposing (Vec3)
 import WebGL
 
 

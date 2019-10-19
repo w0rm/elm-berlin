@@ -2,4 +2,8 @@
 
 ## Building the slides
 
-`elm make Main.elm --output assets/elm.js --yes && open index.html`
+```
+1. From this dir run `elm make Main.elm --output assets/elm.js`
+2. Start a webserver `python -m SimpleHTTPServer`
+3. Open [http://localhost:8000](http://localhost:8000) in your browser
+```

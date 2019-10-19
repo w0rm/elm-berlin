@@ -1,9 +1,8 @@
-module Model
-    exposing
-        ( Model(..)
-        , Message(..)
-        , tangram
-        )
+module Model exposing
+    ( Message(..)
+    , Model(..)
+    , tangram
+    )
 
 import Tangram
 
