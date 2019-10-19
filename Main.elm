@@ -1,8 +1,8 @@
-module Main exposing (..)
+module Main exposing (main)
 
 import Html exposing (Html)
+import Model exposing (Message(..), Model(..))
 import SliceShow
-import Model exposing (Model(..), Message(..))
 import Slides exposing (slides)
 import Tangram
 
@@ -15,7 +15,7 @@ update message model =
                 ( newModel, newEffect ) =
                     Tangram.update a m
             in
-                ( TangramModel newModel, Cmd.map TangramMessage newEffect )
+            ( TangramModel newModel, Cmd.map TangramMessage newEffect )
 
 
 subscriptions : Model -> Sub Message
@@ -32,7 +32,7 @@ view model =
             Tangram.view fountain |> Html.map TangramMessage
 
 
-main : Program Never (SliceShow.Model Model Message) (SliceShow.Message Message)
+main : Program () (SliceShow.Model Model Message) (SliceShow.Message Message)
 main =
     slides
         |> SliceShow.init
