@@ -1,31 +1,30 @@
-module Formatting
-    exposing
-        ( background
-        , padded
-        , title
-        , align
-        , image
-        , Align(..)
-        , richtext
-        , spacing
-        , position
-        , demo
-        , bullets
-        , bullet
-        , crossedBullet
-        , linkBullet
-        , code
-        , shout
-        , split
-        , scale
-        , blueLine
-        )
+module Formatting exposing
+    ( Align(..)
+    , align
+    , background
+    , blueLine
+    , bullet
+    , bullets
+    , code
+    , crossedBullet
+    , demo
+    , image
+    , linkBullet
+    , padded
+    , position
+    , richtext
+    , scale
+    , shout
+    , spacing
+    , split
+    , title
+    )
 
-import Model exposing (Model, Message)
-import SliceShow.Content exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Markdown
+import Model exposing (Message, Model)
+import SliceShow.Content exposing (..)
 
 
 type Align
@@ -43,7 +42,7 @@ slidePadding =
 -}
 padded : List (Content Model Message) -> Content Model Message
 padded =
-    div [ style [ ( "padding", slidePadding ) ] ]
+    div [ style "padding" slidePadding ]
         |> container
 
 
@@ -52,13 +51,11 @@ padded =
 background : String -> List (Content Model Message) -> Content Model Message
 background url =
     div
-        [ style
-            [ ( "height", "100%" )
-            , ( "box-sizing", "border-box" )
-            , ( "background-image", "url(" ++ url ++ ")" )
-            , ( "background-size", "cover" )
-            , ( "padding", slidePadding )
-            ]
+        [ style "height" "100%"
+        , style "box-sizing" "border-box"
+        , style "background-image" ("url(" ++ url ++ ")")
+        , style "background-size" "cover"
+        , style "padding" slidePadding
         ]
         |> container
 
@@ -66,10 +63,10 @@ background url =
 {-| Text alignment
 -}
 align : Align -> List (Content Model Message) -> Content Model Message
-align align =
+align align_ =
     let
         alignValue =
-            case align of
+            case align_ of
                 Left ->
                     "left"
 
@@ -79,8 +76,8 @@ align align =
                 Center ->
                     "center"
     in
-        div [ style [ ( "text-align", alignValue ) ] ]
-            |> container
+    div [ style "text-align" alignValue ]
+        |> container
 
 
 {-| Title content item
@@ -95,7 +92,7 @@ title message =
 -}
 image : ( Int, Int ) -> String -> Content Model Message
 image ( wid, hei ) url =
-    img [ src url, width wid, height hei, style [ ( "vertical-align", "middle" ) ] ] []
+    img [ src url, width wid, height hei, style "vertical-align" "middle" ] []
         |> item
 
 
@@ -118,7 +115,7 @@ code lang str =
 -}
 spacing : Int -> Content Model Message
 spacing px =
-    div [ style [ ( "height", toString px ++ "px" ) ] ] []
+    div [ style "height" (String.fromInt px ++ "px") ] []
         |> item
 
 
@@ -127,11 +124,9 @@ spacing px =
 position : ( Int, Int ) -> List (Content Model Message) -> Content Model Message
 position ( x, y ) =
     div
-        [ style
-            [ ( "position", "absolute" )
-            , ( "left", toString x ++ "px" )
-            , ( "top", toString y ++ "px" )
-            ]
+        [ style "position" "absolute"
+        , style "left" (String.fromInt x ++ "px")
+        , style "top" (String.fromInt y ++ "px")
         ]
         |> container
 
@@ -142,14 +137,12 @@ demo : String -> Content Model Message
 demo url =
     iframe
         [ src url
-        , style
-            [ ( "position", "absolute" )
-            , ( "left", "0" )
-            , ( "top", "0" )
-            , ( "width", "100%" )
-            , ( "height", "100%" )
-            , ( "border", "0" )
-            ]
+        , style "position" "absolute"
+        , style "left" "0"
+        , style "top" "0"
+        , style "width" "100%"
+        , style "height" "100%"
+        , style "border" "0"
         ]
         []
         |> item
@@ -173,7 +166,7 @@ bullet str =
 -}
 crossedBullet : String -> Content Model Message
 crossedBullet str =
-    item (li [ style [ ( "text-decoration", "line-through" ) ] ] [ text str ])
+    item (li [ style "text-decoration" "line-through" ] [ text str ])
 
 
 {-| Link bullet
@@ -188,19 +181,17 @@ linkBullet url str =
 shout : String -> Content Model Message
 shout str =
     div
-        [ style
-            [ ( "position", "absolute" )
-            , ( "left", "0" )
-            , ( "right", "0" )
-            , ( "top", "0" )
-            , ( "bottom", "0" )
-            , ( "padding", slidePadding )
-            , ( "font", "90px/1.2 FiraSans-Light, sans-serif" )
-            , ( "letter-spacing", "-2px" )
-            , ( "text-align", "left" )
-            , ( "display", "flex" )
-            , ( "align-items", "center" )
-            ]
+        [ style "position" "absolute"
+        , style "left" "0"
+        , style "right" "0"
+        , style "top" "0"
+        , style "bottom" "0"
+        , style "padding" slidePadding
+        , style "font" "90px/1.2 FiraSans-Light, sans-serif"
+        , style "letter-spacing" "-2px"
+        , style "text-align" "left"
+        , style "display" "flex"
+        , style "align-items" "center"
         ]
         [ div [] [ text str ] ]
         |> item
@@ -212,13 +203,11 @@ split : List (Content Model Message) -> List (Content Model Message) -> Content 
 split leftContent rightContent =
     container
         (table
-            [ style
-                [ ( "width", "100%" )
-                , ( "table-layout", "fixed" )
-                , ( "border-spacing", "0" )
-                , ( "border-collapse", "collapse" )
-                , ( "vertical-align", "top" )
-                ]
+            [ style "width" "100%"
+            , style "table-layout" "fixed"
+            , style "border-spacing" "0"
+            , style "border-collapse" "collapse"
+            , style "vertical-align" "top"
             ]
         )
         [ container (td []) leftContent
@@ -231,10 +220,8 @@ split leftContent rightContent =
 scale : Float -> List (Content Model Message) -> Content Model Message
 scale ratio =
     div
-        [ style
-            [ ( "transform", "scale(" ++ toString ratio ++ ")" )
-            , ( "transform-origin", "0 0" )
-            ]
+        [ style "transform" ("scale(" ++ String.fromFloat ratio ++ ")")
+        , style "transform-origin" "0 0"
         ]
         |> container
 
@@ -244,14 +231,12 @@ scale ratio =
 blueLine : Content Model Message
 blueLine =
     div
-        [ style
-            [ ( "position", "absolute" )
-            , ( "top", "0" )
-            , ( "left", "0" )
-            , ( "width", "100%" )
-            , ( "border-top", "4px solid #60B5CC" )
-            , ( "z-index", "2" )
-            ]
+        [ style "position" "absolute"
+        , style "top" "0"
+        , style "left" "0"
+        , style "width" "100%"
+        , style "border-top" "4px solid #60B5CC"
+        , style "z-index" "2"
         ]
         []
         |> item

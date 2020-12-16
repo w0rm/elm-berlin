@@ -10,8 +10,9 @@
   <style>h1 a {color: #fff}</style>
 </head>
 <body>
+  <div id="elm"></div>
   <script>
-    Elm.Main.fullscreen();
+    var app = Elm.Main.init({ node: document.getElementById('elm') });
   </script>
 </body>
 </html>

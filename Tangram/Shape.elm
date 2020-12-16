@@ -1,12 +1,11 @@
-module Tangram.Shape
-    exposing
-        ( elm
-        , elmBerlin
-        , default
-        , morph
-        , Shape
-        , Position
-        )
+module Tangram.Shape exposing
+    ( Position
+    , Shape
+    , default
+    , elm
+    , elmBerlin
+    , morph
+    )
 
 
 type alias Position =
@@ -32,11 +31,6 @@ type alias Shape =
 sqrt2 : Float
 sqrt2 =
     sqrt 2
-
-
-sqrtsqrt2 : Float
-sqrtsqrt2 =
-    sqrt sqrt2
 
 
 defaultPosition : Position
